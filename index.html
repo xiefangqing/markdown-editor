@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>markdown 编辑器</title>
+        <style>
+            .markdown-container {
+                display: flex;
+            }
+
+            #editor {
+                flex: 1;
+                padding: 10px;
+            }
+
+            #viewer {
+                flex: 1;
+                border: 1px solid #000;
+                padding: 10px;
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="markdown-container">
+            <textarea id="editor" rows="20"></textarea>
+            <div id="viewer"></div>
+        </div>
+
+        <script type="module" src="./js/index.js"></script>
+    </body>
+</html>
